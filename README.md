@@ -39,7 +39,7 @@
 ### 執行畫面
 <div>
   <div style="display:flex">
-    <img src="https://github.com/FengDian-Su/HackerNet/blob/main/demo_img/launch_demo.png" width="300">
+    <img src="https://github.com/FengDian-Su/HackerNet/blob/main/demo_img/launch_demo.png" width="400">
     <img src="https://github.com/FengDian-Su/HackerNet/blob/main/demo_img/login_demo.png" width="500">
   </div>
   <div style="display:flex">
