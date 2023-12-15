@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FP-HackerNet</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+</head>
+<body>
+    <div class="side-block min">
+        <div class="title-bar">
+            <i class="bx bx-menu"></i>
+            <p class="title">HackerNet - 輕小說檢索系統</p>
+        </div>
+        <div class="user-block">
+            <div>
+                <p class="side-title">用戶資訊<a href="login.html" class="side-title">【登出】</a></p>
+                
+                <div style="display:flex">
+                    <p class="user-text">使用者</p>
+                    <p class="user-text" id="user">末日聖騎</p>
+                </div>
+                <div style="display:flex">
+                    <p class="user-text">帳號</p>
+                    <p class="user-text" style="margin-top: 9px;" id = "userid">123456789</p>
+                </div>
+                <div style="display:flex">
+                    <p class="user-text">性別</p>
+                    <p class="user-text" id = "gender">男</p>
+                </div>
+            </div>
+            <div style="margin-top:60px">
+                <button class="user-btn btn-1" onclick="follow();p_light(0)"><p>點選查看用戶追蹤列表</p></button>
+                <button class="user-btn btn-1" onclick="like();p_light(1)"><p>點選查看用戶點讚列表</p></button>
+            </div>
+        </div>
+        <div class="search-block">
+            <p class="side-title">篩選條件</p>
+            <div class="sub-w">
+                <p class="select">類別</p>
+                <button class="select-btn btn-2" onclick="handleclassClick('FULL');c_light(0)"><p>全部</p></button>
+                <button class="select-btn btn-2" onclick="handleclassClick('normal');c_light(1)"><p>日常系</p></button>
+                <button class="select-btn btn-2" onclick="handleclassClick('Fantasy');c_light(2)"><p>幻想系</p></button>
+                <button class="select-btn btn-2"  onclick="handleclassClick('Dark');c_light(3)"><p>暗黑系</p></button>
+                <button class="select-btn btn-2" onclick="handleclassClick('Character');c_light(4)"><p>人物系</p></button>
+                <button class="select-btn btn-2" onclick="handleclassClick('Special');c_light(5)"><p>特殊系</p></button>
+            </div>
+            <div class="sub-w">
+                <p class="select">出版社</p>
+                <button class="select-btn btn-3" onclick="selectPublisher('全部');p2_light(0)"><p>全部</p></button>
+                <button class="select-btn btn-3" onclick="selectPublisher('電擊');p2_light(1)"><p>電擊</p></button>
+                <button class="select-btn btn-3" onclick="selectPublisher('富士見');p2_light(2)"><p>富士見</p></button>
+                <button class="select-btn btn-3" onclick="selectPublisher('角川');p2_light(3)"><p>角川</p></button>
+                <button class="select-btn btn-3" onclick="selectPublisher('GA');p2_light(4)"><p>GA</p></button>
+                <button class="select-btn btn-3" onclick="selectPublisher('集英社');p2_light(5)"><p>集英社</p></button>
+            </div>
+            <div class="sub-w">
+                <p class="select">字數</p>
+                <button class="select-btn btn-4" onclick="handleWordCountClick('全部');c2_light(0)"><p>全部</p></button>
+                <button class="select-btn btn-4" onclick="handleWordCountClick('<10萬字');c2_light(1)"><p>&lt;10萬字</p></button>
+                <button class="select-btn btn-4" onclick="handleWordCountClick('10萬字~100萬字');c2_light(2)"><p>10萬字~100萬字</p></button>
+                <button class="select-btn btn-4" onclick="handleWordCountClick('>100萬字');c2_light(3)"><p>&gt;100萬字</p></button>
+            </div>
+            <div class="sub-w">
+                <p class="select">相關作品</p>
+                <button class="select-btn btn-5" onclick="handletype('漫畫');c3_light(0)"><p>漫畫</p></button>
+                <button class="select-btn btn-5" onclick="handletype('動漫');c3_light(1)"><p>動漫</p></button>
+            </div><div style="height:5px"></div>
+            <div class="sub-w">
+                <p class="select">輕小說大賞</p>
+                <button class="select-btn btn-6" onclick="s_light(0);sugoi_click(2020)"><p>2020</p></button>
+                <button class="select-btn btn-6" onclick="s_light(1);sugoi_click(2021)"><p>2021</p></button>
+                <button class="select-btn btn-6" onclick="s_light(2);sugoi_click(2022)"><p>2022</p></button>
+                <button class="select-btn btn-6" onclick="s_light(3);sugoi_click(2023)"><p>2023</p></button>
+            </div>
+            <div class="sub-w">
+                <p class="select"></p>
+                <button class="select-btn btn-8" onclick="r_light(0);click_rank(1)"><p>01</p></button>
+                <button class="select-btn btn-8" onclick="r_light(1);click_rank(2)"><p>02</p></button>
+                <button class="select-btn btn-8" onclick="r_light(2);click_rank(3)"><p>03</p></button>
+                <button class="select-btn btn-8" onclick="r_light(3);click_rank(4)"><p>04</p></button>
+                <button class="select-btn btn-8" onclick="r_light(4);click_rank(5)"><p>05</p></button>
+            </div>
+            <div class="sub-w">
+                <p class="select"></p>
+                <button class="select-btn btn-8" onclick="r_light(5);click_rank(6)"><p>06</p></button>
+                <button class="select-btn btn-8" onclick="r_light(6);click_rank(7)"><p>07</p></button>
+                <button class="select-btn btn-8" onclick="r_light(7);click_rank(8)"><p>08</p></button>
+                <button class="select-btn btn-8" onclick="r_light(8);click_rank(9)"><p>09</p></button>
+                <button class="select-btn btn-8" onclick="r_light(9);click_rank(10)"><p>10</p></button>
+            </div>
+            <div class="sub-w">
+                <p class="select">我的書架</p>
+                <button class="select-btn btn-9" onclick="p3_light(0);click_prefer('追蹤')"><p>追蹤</p></button>
+                <button class="select-btn btn-9" onclick="p3_light(1);click_prefer('點讚')"><p>點讚</p></button>
+            </div><div style="height:5px"></div>
+            <div class="input-container">
+                <p class="select" style="width:100px">搜尋作者</p>
+                <input type="text" id="authorInput" class="input-search">
+            </div><div style="height:12px"></div>
+            <div class="input-container">
+                <p class="select" style="width:100px">搜尋關鍵字</p>
+                <input type="text" id="keywordInput" class="input-search">
+            </div><div style="height:6px"></div>
+            <div class="sub-w">
+                <p class="select">排序</p>
+                <button class="select-btn btn-7" onclick="orderhandler('update');s2_light(0)"><p>更新</p></button>
+                <button class="select-btn btn-7"onclick="orderhandler('heat');s2_light(1)"><p>熱度</p></button>
+                <button class="user-btn" style="margin: 4px 0px 0px 120px" onclick="button_search()"><p>送出</p></button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="main-block">
+        <p class="result">&gt;&gt;&nbsp;&nbsp;&nbsp;以下是查詢結果：</p> 
+        <div style="margin: 30px;">
+            <div id =mainblock>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

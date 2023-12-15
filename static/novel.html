@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novel</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <style>
+        .sidebar{
+            width:220px;
+            background-color: #222;
+            border-radius: 0px 20px 20px 0px;
+        }
+        .user-info{
+            height:150px;
+            width:216px;
+            border-radius: 10px;
+            display: flex;
+            margin-left: 4px;
+        }
+        .user-info:hover{
+            background-color: #121212;
+        }
+        .novel-info{
+            width:700px;
+            border: 1px solid rgb(180, 180, 180);
+            border-collapse: collapse;
+            margin:8px 0px 0px 28px;
+        }
+        .novel-info th, td{
+            height:20px;
+            width:70px;
+            border: 1px solid rgb(180, 180, 180);
+            border-collapse: collapse;
+            font-size: 12px;
+            color:rgb(180, 180, 180);
+            text-align:center;
+            padding:6px;
+        }
+        .comment{
+            width:700px;
+            border: 1px solid rgb(180, 180, 180);
+            border-collapse: collapse;
+            margin:8px 0px 0px 28px;
+        }
+        .comment th,td{
+            height:25px;
+            width:70px;
+            border: 1px solid rgb(180, 180, 180);
+            border-collapse: collapse;
+            font-size: 12px;
+            color:rgb(180, 180, 180);
+            text-align:center;
+            padding:6px;
+        }
+        .isbn{
+            border: 1px solid rgb(180, 180, 180);
+            border-collapse: collapse;
+            margin:8px 0px 0px 18px;
+            font-size: 12px;
+            color:rgb(180, 180, 180);
+        }
+        .isbn td{
+            height:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="title-bar">
+            <i class="bx bx-menu"></i>
+            <p class="title">HackerNet</p>
+        </div>
+        <div class="user-info">
+            <div>
+                <p class="side-title">用戶資訊<a href="login.html" class="side-title">【登出】</a></p>
+                <div style="display:flex">
+                    <p class="user-text" >使用者</p>
+                    <p class="user-text" id="user">末日聖騎</p>
+                </div>
+                <div style="display:flex">
+                    <p class="user-text">帳號</p>
+                    <p class="user-text" style="margin-top: 9px;" id="userid">123456789</p>
+                </div>
+                <div style="display:flex">
+                    <p class="user-text">性別</p>
+                    <p class="user-text" id="gender">男</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-block">
+        <p class="result" id="novel_title">&gt;&gt;&nbsp;&nbsp;&nbsp;下班回家，單身美女上司對我有事相求</p>
+        <div style="margin-left:10px;">
+            <table class="isbn">
+                <tr>
+                    <td>作者</td>
+                    <td>出版社</td>
+                    <td>更新日期</td>
+                    <td>字數</td>
+                    <td>狀態</td>
+                    <td>熱度</td>
+                </tr>
+                <tr>
+                    <td id="作者">望公太</td>
+                    <td id="出版社">角川文庫</td>
+                    <td id="更新日期">2023-12-01</td>
+                    <td id="字數">138586</td>
+                    <td id="狀態">連載中</td>
+                    <td id="熱度">D</td>
+                </tr>
+            </table>
+            <table class="isbn" style="height:34px;margin-top:20px">
+                <tr>
+                    <td style="min-width:60px">書籍編號</td>
+                    <td style="width:401px" id="書籍編號">0123456789</td>
+                </tr>
+                <tr>
+                    <td style="min-width:60px">分類</td>
+                    <td style="width:401px" id="分類"></td>
+                </tr>
+                <tr>
+                    <td style="min-width:60px">相關作品</td>
+                    <td style="width:401px" id="相關作品"></td>
+                </tr>
+            </table>
+            <div style="margin:20px 0px 0px 18px;font-size: 14px;"><p>輕小說大賞</p>
+            <table style="border-collapse: collapse;margin-top:10px;">
+                <td style="min-width:70px">年份&nbsp;/&nbsp;排名</td>
+                <td style="width:401px" id="輕小說大賞">2020&nbsp;/&nbsp;1</td>
+            </table></div>
+        </div>
+        <div style="margin-bottom:10px;">
+            <p class="result">&gt;&gt;&nbsp;&nbsp;&nbsp;評論區</p>
+            <table class="comment" id="comment_block"></table>
+        </div>
+        <br><br>
+    </div>
+    <script src="script3.js"></script>
+</body>
+</html>

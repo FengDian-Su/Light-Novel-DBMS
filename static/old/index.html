@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FP-HackerNet</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div class="title-bar">
+        <button class="title"><p>HackerNet - 輕小說檢索系統</p></button>
+    </div>
+    <div class="side-block">
+        <div class="user-block">
+            <div>
+                <p class="select-title">用戶資訊</p>
+                <div style="display:flex">
+                    <p class="user-text">使用者</p>
+                    <p class="user-text" id="user" >末日聖騎</p>
+                </div>
+                <div style="display:flex">
+                    <p class="user-text">UserID</p>
+                    <p class="user-text" style="margin-top: 9px;" id = "userid">123456789</p>
+                </div>
+                <div style="display:flex">
+                    <p class="user-text">性別</p>
+                    <p class="user-text" id = "gender">男</p>
+                </div>
+            </div>
+            <div style="margin-top:60px">
+                <button class="user-btn" onclick="follow()"><p>點選查看用戶追蹤列表</p></button>
+                <button class="user-btn" onclick="like()"><p>點選查看用戶點讚列表</p></button>
+            </div>
+        </div>
+        <div class="search-block">
+            <p class="select-title">篩選條件</p>
+            <div class="sub-w">
+                <p class="select">類別</p>
+                <button class="select-btn" onclick="handleclassClick('FULL')"><p>全部</p></button>
+                <button class="select-btn" onclick="handleclassClick('normal')"><p>日常系</p></button>
+                <button class="select-btn" onclick="handleclassClick('Fantasy')"><p>幻想系</p></button>
+                <button class="select-btn" onclick="handleclassClick('Dark')"><p>暗黑系</p></button>
+                <button class="select-btn" onclick="handleclassClick('Character')"><p>人物系</p></button>
+                <button class="select-btn" onclick="handleclassClick('Special')"><p>特殊系</p></button>
+            </div>
+            <div class="sub-w">
+                <p class="select">出版社</p>
+                <button class="select-btn" onclick="selectPublisher('全部')"><p>全部</p></button>
+                <button class="select-btn" onclick="selectPublisher('電擊')"><p>電擊</p></button>
+                <button class="select-btn" onclick="selectPublisher('富士見')"><p>富士見</p></button>
+                <button class="select-btn" onclick="selectPublisher('角川')"><p>角川</p></button>
+                <button class="select-btn" onclick="selectPublisher('GA')"><p>GA</p></button>
+                <button class="select-btn" onclick="selectPublisher('集英社')"><p>集英社</p></button>
+            </div>
+            <div class="sub-w">
+                <p class="select">字數</p>
+                <button class="select-btn" onclick="handleWordCountClick('全部')"><p>全部</p></button>
+                <button class="select-btn" onclick="handleWordCountClick('<10萬字')"><p>&lt;10萬字</p></button>
+                <button class="select-btn" onclick="handleWordCountClick('10萬字~100萬字')"><p>10萬字~100萬字</p></button>
+                <button class="select-btn" onclick="handleWordCountClick('>100萬字')"><p>&gt;100萬字</p></button>
+
+            </div><div style="height:5px"></div>
+                <div class="input-container">
+                    <p class="select" style="width:100px">搜尋作者</p>
+                    <input type="text" id="authorInput" class="input-search">
+                </div><div style="height:10px"></div>
+                <div class="input-container">
+                    <p class="select" style="width:100px">搜尋關鍵字</p>
+                    <input type="text" id="keywordInput" class="input-search">
+                </div><div style="height:5px"></div>
+            <div class="sub-w">
+                <p class="select">排序</p>
+                <button class="select-btn" onclick="orderhandler('update')"><p>更新</p></button>
+                <button class="select-btn"onclick="orderhandler('heat')"><p>熱度</p></button>
+            </div>
+            <div class="sub-w">
+                <p class="select"></p>
+                <p class="select"></p>
+                <p class="select"></p>
+                <p class="select"></p>
+                <p class="select"> </p>
+                <p>&emsp;&emsp;</p>
+                <button class="select-btn" onclick="button_search()"><p>送出</p></button>
+            </div>
+        </div>
+        <div class="sugoi-block">
+            <p class="select-title">輕小說大賞</p>
+            <div style="display:flex;margin-left:20px">
+                <button class="sugoi-btn" onclick="sugoi_click('2020')"><p>2020</p></button>
+                <button class="sugoi-btn" onclick="sugoi_click('2021')"><p>2021</p></button>
+                <button class="sugoi-btn" onclick="sugoi_click('2022')"><p>2022</p></button>
+                <button class="sugoi-btn" onclick="sugoi_click('2023')"><p>2023</p></button>
+            </div>
+        </div>
+    </div>
+    <div class="main-block" >
+        <p class="result">&gt;&gt;&nbsp;&nbsp;&nbsp;以下是查詢結果：</p>
+        <div style="margin: 30px;">
+            <div id =mainblock>
+                <div class="novel-intro" >
+                    <p class="novel-title">下班回家，單身美女上司對我有事相求</p>
+                    <div style="display:flex">
+                        <p class="novel-else">書籍編號 :&nbsp;<p class="sub-ne">1234</p></p>
+                        <p class="novel-else">/ 作者 :&nbsp;<p style="font-size:12px">望公太</p></p>
+                        <p class="novel-else">/ 出版社 :&nbsp;<p style="font-size:12px">角川文庫</p></p>
+                        <p class="sub-ne">&nbsp;&nbsp;&nbsp;/ ISBN :&nbsp;<p class="sub-ne">12345678</p></p>
+                    </div><div style="height:5px"></div>
+                    <div style="display:flex">
+                        <p class="novel-else">更新日期 :&nbsp;<p class="sub-ne">2023-12-01</p></p>
+                        <p class="novel-else">/ 狀態 :&nbsp;<p style="font-size:12px">連載中</p></p>
+                        <p class="novel-else">/ 熱度 :&nbsp;<p class="sub-ne">D</p></p>
+                        <p class="novel-else">/ 字數 :&nbsp;<p class="sub-ne">138586</p></p>
+                    </div><div style="height:5px"></div>
+                    <p class="novel-else">分類 :</p><div style="height:5px"></div>
+                    <p class="novel-else">相關作品 :</p>
+                    <div style="display:flex">
+                        <div class="novel-prefer" style="left:330px;"><p>點讚</p></div>
+                        <div class="novel-prefer" style="left:380px;"><p>追蹤</p></div>
+                    </div>
+                </div><br>
+                <div class="novel-intro">
+                    <p class="novel-title">下班回家，單身美女上司對我有事相求</p>
+                    <div style="display:flex">
+                        <p class="novel-else">書籍編號 :&nbsp;<p class="sub-ne">1234</p></p>
+                        <p class="novel-else">/ 作者 :&nbsp;<p style="font-size:12px">望公太</p></p>
+                        <p class="novel-else">/ 出版社 :&nbsp;<p style="font-size:12px">角川文庫</p></p>
+                        <p class="sub-ne">&nbsp;&nbsp;&nbsp;/ ISBN :&nbsp;<p class="sub-ne">12345678</p></p>
+                    </div><div style="height:5px"></div>
+                    <div style="display:flex">
+                        <p class="novel-else">更新日期 :&nbsp;<p class="sub-ne">2023-12-01</p></p>
+                        <p class="novel-else">/ 狀態 :&nbsp;<p style="font-size:12px">連載中</p></p>
+                        <p class="novel-else">/ 熱度 :&nbsp;<p class="sub-ne">D</p></p>
+                        <p class="novel-else">/ 字數 :&nbsp;<p class="sub-ne">138586</p></p>
+                    </div><div style="height:5px"></div>
+                    <p class="novel-else">分類 :</p><div style="height:5px"></div>
+                    <p class="novel-else">相關作品 :</p>
+                    <div style="display:flex">
+                        <div class="novel-prefer" style="left:330px;"><p>點讚</p></div>
+                        <div class="novel-prefer" style="left:380px;"><p>追蹤</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
