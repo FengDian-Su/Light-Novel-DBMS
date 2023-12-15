@@ -55,3 +55,8 @@
   <img src="https://github.com/FengDian-Su/HackerNet/blob/main/demo_img/novel_demo.png" width="500">
 
 ### 貢獻
+
+- [蘇豐典](https://github.com/FengDian-Su)：前端 & JavaScript 響應設計
+- [陳柏硯](https://github.com/FengDian-Su)：全端 & 資料庫連接
+- [高韵晴](https://github.com/FengDian-Su)：資料庫原始資料蒐集
+- [李曉旻](https://github.com/FengDian-Su)：資料庫原始資料蒐集
