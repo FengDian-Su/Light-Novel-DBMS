@@ -37,7 +37,7 @@
 - 根據 ./xlsx/User.xlsx 的紀錄，選擇一筆 {username：password} 登入
 
 ### 執行畫面
-
-![launch.png](./demo_img/launch.png)
+<img src="https://thehappypuppysite.com/wp-content/uploads/2017/10/Cute-Dog-Names-HP-long.jpg" width="200">
+![launch_demo.png](./demo_img/launch_demo.png)
 
 ### 貢獻
