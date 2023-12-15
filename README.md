@@ -40,7 +40,7 @@
 
 - spyder 執行結果
   
-  <img src="https://github.com/FengDian-Su/HackerNet/blob/main/demo_img/lauch_demo.png" width="400">
+  <img src="https://github.com/FengDian-Su/HackerNet/blob/main/demo_img/lauch_demo.png" width="500">
   
 - 登入介面
   
