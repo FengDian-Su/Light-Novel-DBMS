@@ -60,3 +60,11 @@
 - [陳柏硯](https://github.com/baiyanchen8)：全端 & 資料庫連接
 - [高韵晴](https://github.com/ChingChingKao)：資料庫原始資料蒐集
 - [李曉旻](https://github.com/SiaominLi)：資料庫原始資料蒐集
+
+### 參考資源
+
+- [Python Flask 入門指南](https://devs.tw/post/448)
+- [CORS 完全手冊](https://blog.huli.tw/2021/02/19/cors-guide-1/)
+- [Python fetchone 讀取資料庫](https://www.cjkuo.net/python-fetchdb/)
+- [Flask 處理上下文](https://www.cnblogs.com/xiaxiaoxu/p/10398346.html)
+- [Python os.abort() Method](https://www.w3schools.com/python/ref_os_abort.asp)
