@@ -37,7 +37,15 @@
 - 根據 ./xlsx/User.xlsx 的紀錄，選擇一筆 {username：password} 登入
 
 ### 執行畫面
-<img src="https://thehappypuppysite.com/wp-content/uploads/2017/10/Cute-Dog-Names-HP-long.jpg" width="200">
-![launch_demo.png](./demo_img/launch_demo.png)
+<div>
+  <div style="display:flex">
+    <img src="https://github.com/FengDian-Su/HackerNet/blob/main/demo_img/launch_demo.png" width="300">
+    <img src="https://github.com/FengDian-Su/HackerNet/blob/main/demo_img/login_demo.png" width="500">
+  </div>
+  <div style="display:flex">
+    <img src="https://github.com/FengDian-Su/HackerNet/blob/main/demo_img/search_demo.png" width="500">
+    <img src="https://github.com/FengDian-Su/HackerNet/blob/main/demo_img/novel_demo.png" width="500">
+  </div>
+</div>
 
 ### 貢獻
