@@ -57,6 +57,6 @@
 ### 貢獻
 
 - [蘇豐典](https://github.com/FengDian-Su)：前端 & JavaScript 響應設計
-- [陳柏硯](https://github.com/FengDian-Su)：全端 & 資料庫連接
-- [高韵晴](https://github.com/FengDian-Su)：資料庫原始資料蒐集
-- [李曉旻](https://github.com/FengDian-Su)：資料庫原始資料蒐集
+- [陳柏硯](https://github.com/baiyanchen8)：全端 & 資料庫連接
+- [高韵晴](https://github.com/ChingChingKao)：資料庫原始資料蒐集
+- [李曉旻](https://github.com/SiaominLi)：資料庫原始資料蒐集
