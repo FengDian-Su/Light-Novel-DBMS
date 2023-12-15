@@ -37,15 +37,21 @@
 - 根據 ./xlsx/User.xlsx 的紀錄，選擇一筆 {username：password} 登入
 
 ### 執行畫面
-<div>
-  <div style="display:flex">
-    <img src="https://github.com/FengDian-Su/HackerNet/blob/main/demo_img/launch_demo.png" width="400">
-    <img src="https://github.com/FengDian-Su/HackerNet/blob/main/demo_img/login_demo.png" width="500">
-  </div>
-  <div style="display:flex">
-    <img src="https://github.com/FengDian-Su/HackerNet/blob/main/demo_img/search_demo.png" width="500">
-    <img src="https://github.com/FengDian-Su/HackerNet/blob/main/demo_img/novel_demo.png" width="500">
-  </div>
-</div>
+
+- spyder 執行結果
+  
+  <img src="https://github.com/FengDian-Su/HackerNet/blob/main/demo_img/launch_demo.png" width="400">
+  
+- 登入介面
+  
+  <img src="https://github.com/FengDian-Su/HackerNet/blob/main/demo_img/login_demo.png" width="500">
+  
+- 篩選介面
+  
+  <img src="https://github.com/FengDian-Su/HackerNet/blob/main/demo_img/search_demo.png" width="500">
+  
+- 小說評論介面
+  
+  <img src="https://github.com/FengDian-Su/HackerNet/blob/main/demo_img/novel_demo.png" width="500">
 
 ### 貢獻
