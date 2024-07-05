@@ -20,15 +20,16 @@
 
 #### step1 - download file from github
 
-- static
-  - index.html：主介面顯示
-  - login.html：登入介面顯示
-  - novel.html：小說 & 評論區介面顯示
-  - script.js / script1.js / script3.js：處理前端響應事件
-  - style.css：前端介面設計
-- mydatabase.db：將整個資料庫打包成一個檔案
-- app.py：建立 Flask 框架，負責所有後台處理
-
+| File Name                                  | Description                                                   |
+| ------------------------------------------ | --------------------------------------------------------------|
+| static/index.html                          | 主介面顯示                                                     |
+| static/login.html                          | 登入介面顯示                                                   |
+| static/novel.html                          | 小說 & 評論區介面顯示                                           |
+| static/script.js                           | 處理前端響應事件                                                |
+| static/style.css                           | 前端介面排版                                                   |
+| mydatabase.db                              | 將整個資料庫打包成一個檔案                                       |
+| app.py                                     | 建立 Flask 框架，負責所有後台處理                                |
+ 
 #### step2 - execute app.py file
 
 - 以 spyder 為例，執行 app.py
