@@ -2,7 +2,7 @@
 
 ### 簡介
 
-這是一個提供給廣大輕小說愛好者的資訊檢索平台，以網站形式發布
+這是一個提供給廣大輕小說愛好者的資訊檢索平台，以網站形式呈現
 
 使用 SQL 語法建立及搜索資料庫
 
@@ -54,12 +54,12 @@
   
   <img src="https://github.com/FengDian-Su/HackerNet/blob/main/demo_img/novel_demo.png" width="500">
 
-### 貢獻
+### 貢獻者
 
-- [蘇豐典](https://github.com/FengDian-Su)：前端 & JavaScript 響應設計
-- [陳柏硯](https://github.com/baiyanchen8)：全端 & 資料庫連接
-- [高韵晴](https://github.com/ChingChingKao)：資料庫原始資料蒐集
-- [李曉旻](https://github.com/SiaominLi)：資料庫原始資料蒐集
+- [FengDian-Su](https://github.com/FengDian-Su)：前端 & JavaScript 響應設計
+- [baiyanchen8](https://github.com/baiyanchen8)：全端 & 資料庫連接
+- [ChingChingKao](https://github.com/ChingChingKao)：資料庫原始資料蒐集
+- [SiaominLi](https://github.com/SiaominLi)：資料庫原始資料蒐集
 
 ### 參考資源
 
