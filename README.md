@@ -1,4 +1,4 @@
-## HackerNet
+## Light Novel Database Management System
 
 ### 簡介
 
