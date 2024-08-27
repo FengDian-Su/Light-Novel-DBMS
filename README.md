@@ -57,10 +57,10 @@
 
 ### 貢獻者
 
-- [FengDian-Su](https://github.com/FengDian-Su)：前端 & JavaScript 響應設計
-- [baiyanchen8](https://github.com/baiyanchen8)：全端 & 資料庫連接
-- [ChingChingKao](https://github.com/ChingChingKao)：資料庫原始資料蒐集
-- [SiaominLi](https://github.com/SiaominLi)：資料庫原始資料蒐集
+- [FengDian-Su](https://github.com/FengDian-Su)
+- [ChingChingKao](https://github.com/ChingChingKao)
+- [baiyanchen8](https://github.com/baiyanchen8)
+- [SiaominLi](https://github.com/SiaominLi)
 
 ### 參考資源
 
